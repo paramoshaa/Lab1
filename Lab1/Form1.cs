@@ -22,5 +22,15 @@ namespace Lab1
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 button1.BackColor = colorDialog1.Color;
         }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            BackColor = colorDialog1.Color;
+        }
+
+        private void Form1_DoubleClick(object sender, EventArgs e)
+        {
+            BackColor = Color.White;
+        }
     }
 }
